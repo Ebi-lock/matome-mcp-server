@@ -1,0 +1,25 @@
+{
+  "name": "matome-mcp-server",
+  "version": "0.0.3",
+  "description": "matome",
+  "license": "MIT",
+  "author": "matome",
+  "type": "module",
+  "bin": {
+    "matome-mcp-server": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.3",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "typescript": "^5.8.3"
+  }
+}
